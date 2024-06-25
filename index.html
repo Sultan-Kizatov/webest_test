@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="shortcut icon" href="img/product.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<main class="container">
+    <header>
+        <h1>Каталог товаров</h1>
+    </header>
+    <div class="catalog">
+        <div class="product-card">
+            <h2>Товар 1</h2>
+            <p>Описание товара 1</p>
+            <img src="img/product.jpg" alt="Товар 1">
+            <button class="details-btn" data-title="Товар 1" data-description="Описание товара 1" data-image="img/product.jpg">Подробнее</button>
+          </div>
+        <div class="product-card">
+            <h2>Товар 2</h2>
+            <p>Описание товара 2</p>
+            <img src="img/product.jpg" alt="Товар 2">
+            <button class="details-btn" data-title="Товар 2" data-description="Описание товара 2" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 3</h2>
+            <p>Описание товара 3</p>
+            <img src="img/product.jpg" alt="Товар 3">
+            <button class="details-btn" data-title="Товар 3" data-description="Описание товара 3" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 4</h2>
+            <p>Описание товара 4</p>
+            <img src="img/product.jpg" alt="Товар 4">
+            <button class="details-btn" data-title="Товар 4" data-description="Описание товара 4" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 5</h2>
+            <p>Описание товара 5</p>
+            <img src="img/product.jpg" alt="Товар 5">
+            <button class="details-btn" data-title="Товар 5" data-description="Описание товара 5" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 6</h2>
+            <p>Описание товара 6</p>
+            <img src="img/product.jpg" alt="Товар 6">
+            <button class="details-btn" data-title="Товар 6" data-description="Описание товара 6" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 7</h2>
+            <p>Описание товара 7</p>
+            <img src="img/product.jpg" alt="Товар 7">
+            <button class="details-btn" data-title="Товар 7" data-description="Описание товара 7" data-image="img/product.jpg">Подробнее</button>
+        </div>
+        <div class="product-card">
+            <h2>Товар 8</h2>
+            <p>Описание товара 8</p>
+            <img src="img/product.jpg" alt="Товар 8">
+            <button class="details-btn" data-title="Товар 8" data-description="Описание товара 8" data-image="img/product.jpg">Подробнее</button>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Название товара</h2>
+          <p>Описание товара</p>
+          <img src="img/product.jpg" alt="Товар">
+          <div class="modal-clicks">
+            <div class="modal-clicks__left">
+                <button id="decrease">-</button>
+                <span id="quantity">1</span>
+                <button id="increase">+</button>
+            </div>
+            <button id="addToCart">Добавить в корзину</button>
+          </div>
+        </div>
+    </div>
+    
+    <div id="cartCounter" class="cart-counter"></div>
+</main>
+
+<script defer src="app.js"></script>
+</body>
+</html>
